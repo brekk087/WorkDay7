@@ -9,11 +9,14 @@ Public Class Form1
 
         ' Compute the result
         Dim result As String = ""
-
-
+        Dim length As Integer
+        length = st.Length()
+        For i = length - 1 To 0 Step -1
+            result = result & st.Chars(i)
+        Next
 
         ' Report the output to the user
-        MessageBox.Show("Not implemented yet", "Result")
+        MessageBox.Show(result)
 
     End Sub
 End Class
